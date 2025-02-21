@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+
+}
+.mainbox 
+{
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 42%;
+    background-color:#e5e5e5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.manhang
+{
+   /* display: flex; */
+    height: 80vh;
+    width: 80%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.right 
+{
+    width: 58%;
+    background-color: #e8eddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rbox
+{
+    /* display: flex; */
+    height: 80vh;
+    width: 84%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: white;
+
+}
+.typebut
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.animals,.fruits,.countries
+{
+    margin: 4%;
+    width: 30%;
+    height: 60%;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    font-size: 160%;
+    border-radius: 10px;
+}
+.animals:hover,.fruits:hover,.countries:hover
+{
+    background-color:lightgray;
+    color: white;
+}
+.dashes
+{
+    margin-left: 7.5%;
+    width: 85%;
+    height: 20%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+
+}
+.keyboard
+{
+    width: 90%;
+    height: 45%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 5%;
+    margin-top: 2%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button-container {
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.alphabet-button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.alphabet-button:hover {
+    background-color: #0056b3;
+}
+.lbox
+{
+    height: 80%;
+    width: 85%;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 7.5%;
+    background-image: url(hangmanback4.png);
+    background-size: cover;
+}
+
+/* 5+20+15 */
