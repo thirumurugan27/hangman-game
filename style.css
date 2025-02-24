@@ -92,6 +92,10 @@
     border-width: 3px;
     border-style: solid;
     border-color: black;
+    text-align: center;
+    font-size: 350%;
+    justify-content: center;
+    align-items: center;
 
 }
 .keyboard
@@ -141,5 +145,11 @@
     background-image: url(hangmanback0.png);
     background-size: cover;
 }
+/* Faded effect for unselected category buttons */
+.faded {
+    opacity: 0.5;
+    pointer-events: none; /* Disable clicks */
+}
+
 
 /* 5+20+15 */
