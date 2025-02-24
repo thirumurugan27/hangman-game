@@ -80,7 +80,7 @@
 }
 .animals:hover,.fruits:hover,.countries:hover
 {
-    background-color:lightgray;
+    background-color:brown;
     color: white;
 }
 .dashes

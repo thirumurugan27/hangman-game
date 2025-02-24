@@ -9,9 +9,9 @@ const hangmanImages = [
 ];
 
 let words = {
-    animals: ["ELEPHANT", "TIGER", "GIRAFFE", "KANGAROO", "ZEBRA"],
-    fruits: ["APPLE", "BANANA", "CHERRY", "GRAPE", "MANGO"],
-    countries: ["CANADA", "INDIA", "FRANCE", "BRAZIL", "JAPAN"]
+    animals: ["ELEPHANT", "TIGER", "GIRAFFE", "COW", "ZEBRA","MONKEY","LION","DOG","GOAT","CAT"],
+    fruits: ["APPLE", "BANANA", "CHERRY", "GRAPE", "MANGO","ORANGE","PEACH","PEAR","PINEAPPLE","STRAWBERRY"],
+    countries: ["CANADA", "INDIA", "FRANCE", "BRAZIL", "JAPAN","CHINA","GERMANY","ITALY","AUSTRALIA","SPAIN"],
 };
 
 let chosenWord = "";
@@ -28,7 +28,7 @@ function buttons(event) {
 function startGame(category) {
     // Pick a random word from the category
     let wordsArray = words[category];
-    chosenWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
+    chosenWord = wordsArray[Math.floor(Math.random() * 10)+1];
 
     // Create dashes
     guessedWord = Array(chosenWord.length).fill("_");
