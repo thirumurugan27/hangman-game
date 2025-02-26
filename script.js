@@ -5,6 +5,7 @@ const hangmanImages = [
     "hangmanback2.png",
     "hangmanback3.png",
     "hangmanback4.png",
+    "hangmanback5.png",
     "hangmanback6.png"
 ];
 
