@@ -29,7 +29,7 @@ function buttons(event) {
 function startGame(category) {
     // Pick a random word from the category
     let wordsArray = words[category];
-    chosenWord = wordsArray[Math.floor(Math.random() * 10)+1];
+    chosenWord = wordsArray[Math.floor(Math.random() * 10)];
 
     // Create dashes
     guessedWord = Array(chosenWord.length).fill("_");
@@ -40,7 +40,7 @@ function startGame(category) {
     updateHangmanImage();
 
     // Enable all alphabet buttons
-    document.querySelectorAll(".alphabet-button").forEach(button => {
+    document.querySelectorAll(".alphabet-button").forEach(button =>{
         button.disabled = false;
         button.style.backgroundColor = "#007bff";
     });
@@ -54,15 +54,19 @@ function letterSelected(event) {
 
     if (chosenWord.includes(letter)) {
         // Correct guess - update dashes
-        for (let i = 0; i < chosenWord.length; i++) {
-            if (chosenWord[i] === letter) {
-                guessedWord[i] = letter;
+        for (let i = 0; i < chosenWord.length; i++) 
+            {
+                if (chosenWord[i] === letter) 
+                {
+                    guessedWord[i] = letter;
+                }
+
             }
-        }
         document.querySelector(".dashes").innerText = guessedWord.join(" ");
 
         // Check if player won
-        if (!guessedWord.includes("_")) {
+        if (!guessedWord.includes("_")) 
+        {
             setTimeout(() => alert("Congratulations! You won!"), 500);
         }
     } else {
